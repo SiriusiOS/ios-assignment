@@ -7,7 +7,8 @@
 
 import UIKit
 import MapKit
-class CityVC: BaseVC {
+
+final class CityDetailVC: BaseVC {
 
     @IBOutlet weak var mapView: MKMapView!
     var city: CityEntity? {

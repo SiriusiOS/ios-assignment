@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainCitiesVC: UISplitViewController {
+final class MainCitiesVC: UISplitViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class MainCitiesVC: UISplitViewController {
 
         if let leftNavController = viewControllers.first as? UINavigationController,
            let masterViewController = leftNavController.viewControllers.first as? CitiesVC,
-           let detailViewController = viewControllers.last as? CityVC ?? (viewControllers.last as? UINavigationController)?.topViewController as? CityVC
+           let detailViewController = viewControllers.last as? CityDetailVC ?? (viewControllers.last as? UINavigationController)?.topViewController as? CityDetailVC
          {
             masterViewController.viewModel = CitiesViewModelImpl(model: CitiesModel(), citiStore: AppDependencies.cityStore)
             masterViewController.dataSource = CitiesDataSourceImpl()
