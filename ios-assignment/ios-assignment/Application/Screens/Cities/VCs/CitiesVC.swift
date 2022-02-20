@@ -21,7 +21,7 @@ final class CitiesVC: BaseVC {
     }
     override func setupUI() {
         searchBar.delegate = self
-        title = "Cities"
+        title = "CitiesVC.Title".localized
     }
     override func setupConfig() {
         super.setupConfig()

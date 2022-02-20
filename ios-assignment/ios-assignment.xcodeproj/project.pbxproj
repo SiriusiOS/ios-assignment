@@ -54,6 +54,8 @@
 		F3EAACF627C13FF900D9A0B7 /* CityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAACF427C13FF900D9A0B7 /* CityRepository.swift */; };
 		F3EAACFA27C140E500D9A0B7 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAACF927C140E500D9A0B7 /* StoryBoard.swift */; };
 		F3EAACFD27C143F000D9A0B7 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAACFC27C143F000D9A0B7 /* Spinner.swift */; };
+		F3EAAD0127C14BF900D9A0B7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3EAAD0027C14BF900D9A0B7 /* Localizable.strings */; };
+		F3EAAD0827C14C5A00D9A0B7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EAAD0727C14C5A00D9A0B7 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		F3EAACF427C13FF900D9A0B7 /* CityRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityRepository.swift; sourceTree = "<group>"; };
 		F3EAACF927C140E500D9A0B7 /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		F3EAACFC27C143F000D9A0B7 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		F3EAAD0027C14BF900D9A0B7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		F3EAAD0727C14C5A00D9A0B7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,7 @@
 		F3EAAC8227C0F99000D9A0B7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F3EAACFF27C14BDA00D9A0B7 /* Localizable */,
 				F3EAAB9E27C0EDBE00D9A0B7 /* Assets.xcassets */,
 				F3EAABA327C0EDBE00D9A0B7 /* Info.plist */,
 			);
@@ -488,6 +493,7 @@
 				F3EAACD127C13F4A00D9A0B7 /* UIViewController+Extension.swift */,
 				F3EAACD227C13F4A00D9A0B7 /* UIStoryboard+Extension.swift */,
 				F3EAACD327C13F4A00D9A0B7 /* MapKit+Extension.swift */,
+				F3EAAD0727C14C5A00D9A0B7 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -617,6 +623,14 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		F3EAACFF27C14BDA00D9A0B7 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				F3EAAD0027C14BF900D9A0B7 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -721,6 +735,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EAAD0127C14BF900D9A0B7 /* Localizable.strings in Resources */,
 				F3EAABA227C0EDBE00D9A0B7 /* LaunchScreen.storyboard in Resources */,
 				F3EAACB027C0FDF600D9A0B7 /* CityItemCell.xib in Resources */,
 				F3EAAB9F27C0EDBE00D9A0B7 /* Assets.xcassets in Resources */,
@@ -789,6 +804,7 @@
 				F3EAAC9127C0FA7300D9A0B7 /* IBaseViewModel.swift in Sources */,
 				F3EAACAE27C0FDF600D9A0B7 /* CitiesModel.swift in Sources */,
 				F3EAACFD27C143F000D9A0B7 /* Spinner.swift in Sources */,
+				F3EAAD0827C14C5A00D9A0B7 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,7 +1043,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X9WH6LJ5WW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.savvycom.ios-assignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1047,7 +1063,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X9WH6LJ5WW;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.savvycom.ios-assignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1066,6 +1082,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X9WH6LJ5WW;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.savvycom.ios-assignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1084,6 +1101,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X9WH6LJ5WW;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.savvycom.ios-assignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
